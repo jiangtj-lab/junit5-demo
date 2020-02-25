@@ -1,4 +1,4 @@
-package com.jiangtj.example.junit5;
+package com.jiangtj.example.junit5.base;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

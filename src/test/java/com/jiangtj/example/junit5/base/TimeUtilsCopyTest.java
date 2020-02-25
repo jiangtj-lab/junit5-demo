@@ -1,11 +1,11 @@
-package com.jiangtj.example.junit5;
+package com.jiangtj.example.junit5.base;
 
+import com.jiangtj.example.junit5.TimeUtils;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by MrTT (jiang.taojie@foxmail.com)
@@ -17,7 +17,7 @@ class TimeUtilsCopyTest {
     void hello() {
         Instant now = Instant.now();
         String expect = "现在时间是：" + now.toString();
-        assertEquals(expect, TimeUtils.hello(now));
+        Assertions.assertEquals(expect, TimeUtils.hello(now));
     }
 }
 

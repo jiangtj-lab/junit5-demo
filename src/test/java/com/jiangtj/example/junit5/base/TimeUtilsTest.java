@@ -1,6 +1,8 @@
-package com.jiangtj.example.junit5;
+package com.jiangtj.example.junit5.base;
 
+import com.jiangtj.example.junit5.TimeUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -26,7 +28,7 @@ class TimeUtilsTest {
     void hello() {
         Instant now = Instant.now();
         String expect = "现在时间是：" + now.toString();
-        assertEquals(expect, TimeUtils.hello(now));
+        Assertions.assertEquals(expect, TimeUtils.hello(now));
     }
     @Test
     void asserts() {

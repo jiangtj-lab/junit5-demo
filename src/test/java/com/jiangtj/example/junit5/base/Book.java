@@ -1,4 +1,4 @@
-package com.jiangtj.example.junit5;
+package com.jiangtj.example.junit5.base;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
